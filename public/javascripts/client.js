@@ -14,21 +14,22 @@
 			seats: {
 				a: {
 					price   : 12.00,
-					classes : 'front-seat' //your custom CSS class
+					classes : 'available' //your custom CSS class
 				},
-				v: {
+	/*			v: {
 					classes : 'available' //your custom CSS class
 				},
 				e: {
-						classes : 'sold' //your custom CSS class
-				}	},
-
-		/*	legend : {
-				 node : $('#my-legend-container'),
+						classes : 'unavailable' //your custom CSS class
+				}*/	},
+/*
+			legend : {
+				 node : $(),
 				 items: [
-					[v, 'available','open'],
-					[e,'unavailable','sold'] ]
-			},  */
+					[v, 'available','available'],
+					[e,'unavailable','unavailable'] ]
+			}, */
+
 
 			click: function () {
 				if (this.status() == 'available') {

@@ -6,6 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express theatre' });
 });
 
+// todo: add post to create new shows
+
+//todo add put route to update existing shows
+
+//todo add delete to remove a show
+
  /* handler fired in seat context(this)
 click : function(){
   if (this.status() =="available'"){
@@ -18,10 +24,4 @@ click : function(){
   }
 }
 */
-
-
-
-
-
-
 module.exports = router;
