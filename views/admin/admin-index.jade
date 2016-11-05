@@ -1,0 +1,16 @@
+extends admin-layout
+
+block content
+  h1= title
+  p Welcome to Admin
+  h2 Manage Shows
+  ul(id="list-shows")
+  ul
+    li create
+    li
+      a(href="/shows") retrieve
+    li update
+      form(method="PUT" action="/show")
+        input(type="text", placeholder="show name")
+        input(type="submit")
+    li delete

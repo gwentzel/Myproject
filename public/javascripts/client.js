@@ -50,7 +50,7 @@
 		});
 
 		//Make all available 'c' seats unavailable
-		sc.find('c.available').status('unavailable');
+		sc.find('a.available').status('unavailable');
 
 		/*
 		Get seats with ids 2_6, 1_7 (more on ids later on),
@@ -61,7 +61,8 @@
 		});
 
 
-
+		//console.dir(sc.get('1_2').data())
+		//console.log('what is my tree structure?', sc.get('1_2').data(), 'hi dad', 'more')
 		console.log('Seat 1_2 costs ' + sc.get('1_2').data().price + ' and is currently ' + sc.status('1_2'));
 
 		});
