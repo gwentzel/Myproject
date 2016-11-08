@@ -6,7 +6,13 @@ block content
   h2 Manage Shows
   ul(id="list-shows")
   ul
-    li create
+    li add
+    div class="list" ng-controller="mainCtrl"
+    div class= add
+    a(href="#" ng-click="addShow")
+    form(method="POST" action="/shows")
+      input(type="text", placeholder="show name")
+      input(type="submit")
     li
       a(href="/shows") retrieve
     li update
