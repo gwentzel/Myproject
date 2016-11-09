@@ -32,7 +32,7 @@ Show.create(show, function(err,show){
   if(err) {
     return res.status(500).json({err:err.message});
   }
-  res.json({'show': show,message: 'Show created'});
+  res.json({'show': shows.play,message: 'Show created'});
 })
 
 
@@ -49,7 +49,7 @@ Show.findByIdAndUpdate(id,show,{new: true}, function(err,show){
   if(err) {
     return res.status(500).json({err:err.message});
   }
-  res.json({'show': show,message: 'Show updated'});
+  res.json({'show': show.play,message: 'Show updated'});
 })
 
 });

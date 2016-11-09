@@ -1,22 +1,25 @@
 <html>
+<link href='https://fonts.googleapis.com/css?family=Varela+Round'
+rel='stylesheet' type='text/css'>
+<link href='/stylesheets/main.css' rel='stylesheet' type="text/css">
 
 <body ng-app="showListApp">
 
-  <h3 Our Shows ></h3>
+  <h1> Our Shows ></h1>
   <div class="list" ng-controller="mainCtrl">
     <div class="add">
-      <a href="#" ng-click="addShow()">
+      <a href="#" ng-click="addShow()"
         + Add a New Show  </a>
     </div>
 
   <show></show>
   </div>
 
-  <script src="/vendor/angular.js"></script>
+
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/main.js"></script>
-  <script src="/scripts/controllers/show.js"></script>
-  <script src="/scripts/services/data.js"></script>
+
+  <script src="/scripts/services/app.js"></script>
   <script src="/scripts/directives/show.js"></script>
 
 </body>
