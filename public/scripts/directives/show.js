@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('showListApp')
-.directive('show', function)(){
+.directive('shows', function(){
   return {
-    templateUrl: 'templates/show.html',
+    templateUrl: 'templates/shows.html',
     replace: true,
     controller: 'showCtrl'
   }
-});
+})
