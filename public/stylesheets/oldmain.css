@@ -40,7 +40,7 @@ a {
         margin-left: 10px; }
         .list .item .actions .delete:hover {
           color: #f28888; }
-    .list .item.editing-item .actions {
+    .list .item.editing .actions {
       margin-top: 17px; }
   .list .edited label:after {
     content: " edited";
@@ -54,7 +54,7 @@ a {
   .list .add {
     padding: 25px 0 27px 25px; }
 
-input[type="checkbox"] {
+/*input[type="checkbox"] {
     display:none;
 }
 input[type="checkbox"] + span {
@@ -68,21 +68,4 @@ input[type="checkbox"] + span {
 }
 input[type="checkbox"]:checked + span {
     background:url(checkbox-filled.svg) left top no-repeat;
-}
-
-nav ul {
-  text-align: left;
-  list-style: none;
-  margin-left: 0;
-  padding: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  display: block;
-  margin: 0;
-  padding: 10px 15px;
-  color: #444;
-  background-color: #adadad;
-}
+}*/
