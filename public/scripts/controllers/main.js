@@ -2,17 +2,21 @@
 
 angular.module('showListApp')
 .controller('mainCtrl', function($scope, dataService){
-$scope.addShow = function() {
-var show = {play: "This is a new show"};
-  $scope.shows.push(show);
+
+    dataService.getShows(function(res){
+      var shows = res.data;
+        $scope.shows = shows  ;
+      });
+
+
+      $scope.addShow = function() {
+        $scope.shows.unshift({play: "This is a new show",
+                        completed: false});
+
+/*console.log("main controller code reached");*/
+    console.log(res.data); 
 };
-console.log("main controller code reached");
-
-
-dataService.getShows(function(res){
-  console.log(res.data);
-});
-});
+})
 
 
 /*<body ng-app="showListApp">
