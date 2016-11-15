@@ -10,7 +10,7 @@
 1. pack it up
 1. `webpack`
 1. launch the server
-1. `node ./src/app.js`
+1. `node ./backend/app.js`
 1. open web browser and point it to
 1. `http://localhost:3000`
 1. enjoy the show!

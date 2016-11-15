@@ -9,7 +9,7 @@ var app = express();
 require('./database');
 require('./seed');
 
-app.use('/', express.static('public'));
+app.use('/', express.static('frontend/public'));
 app.use(parser.json());
 
 app.use('/api', router);

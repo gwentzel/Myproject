@@ -4,6 +4,7 @@
   "description": "My first MEAN stack for Teresa's shows.",
   "main": "src/app.js",
   "scripts": {
+    "start": "node backend/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
