@@ -2,7 +2,7 @@
 
 var express     = require('express');
 var parser      = require('body-parser');
-var controllers = require('./controller');
+var controllers = require('./controllers/show');
 
 var app = express();
 
