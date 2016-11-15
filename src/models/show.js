@@ -2,17 +2,14 @@
 
 var mongoose = require('mongoose');
 
-//seat-chart.play
-//seat-chart.date
-//set-chart.map
+// show.name
+// show.completed
 
 var showSchema = new mongoose.Schema({
-play: String,
-date: Date,
-map: String
-
+	name: String,
+	completed: Boolean
 });
 
-var model = mongoose.model('Show',showSchema);
+var model = mongoose.model('Show', showSchema);
 
 module.exports = model;

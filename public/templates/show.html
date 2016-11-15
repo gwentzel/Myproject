@@ -1,12 +1,10 @@
-    <div class="item" ng-class="{'editing-item':editing, 'edited': show.edited, 'completed':show.completed}"
-         ng-repeat="show in shows | orderBy: 'completed' ">
-       <input type="checkbox" ng-model= "show.completed" />
-       <span ng-click="show.completed = !show.completed; show.edited = true"></span>
-       <label ng-hide="editing" ng-click="editing=true">{{show.play}}</label>
-       <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text"
-              ng-model="show.play" ng-change= "show.edited = true"/>
+    <div class="item" ng-class="{'editing-item': editing, 'edited': show.edited, 'completed': show.completed}" ng-repeat="show in shows | orderBy: 'completed' " ng-init="show.completed = false">
+      <input type="checkbox" ng-model="show.completed" />
+      <span ng-click="show.completed = !show.completed; show.edited = true"></span>
+      <label ng-hide="editing" ng-click="editing=true">{{show.name}}</label>
+      <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text" ng-model="show.name" ng-change="show.edited = true"/>
       <div class="actions">
-        <a href ="" ng-click= "saveShows()">Save</a>
-        <a href ="" class="delete" ng-click="deleteShow(show, $index)">Delete</a>
+        <a href="" ng-click="saveShows()">Save</a>
+        <a href="" class="delete" ng-click="deleteShow(show, $index)">Delete</a>
       </div>
     </div>

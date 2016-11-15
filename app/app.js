@@ -2,7 +2,7 @@
 
 var angular = require('angular');
 
-angular.module('todoListApp', []);
+angular.module('showListApp', []);
 
 require('./scripts/services');
 require('./scripts/directives');

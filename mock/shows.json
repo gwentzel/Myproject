@@ -1,4 +1,5 @@
 [
- {"play":"First Play"},
- {"play":"Second Play"}
- ]
+	{"name": "Mock play 1"},
+	{"name": "Mock play 2"},
+	{"name": "Mock play 3"}
+]
