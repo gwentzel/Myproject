@@ -14,10 +14,9 @@ angular.module('showListApp')
                         completed: false});
 
 /*console.log("main controller code reached");*/
-    console.log(res.data); 
+    /*console.log(res.data); */
 };
-})
-
+});
 
 /*<body ng-app="showListApp">
 

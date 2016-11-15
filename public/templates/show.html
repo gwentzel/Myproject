@@ -4,7 +4,7 @@
        <span ng-click="show.completed = !show.completed; show.edited = true"></span>
        <label ng-hide="editing" ng-click="editing=true">{{show.play}}</label>
        <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text"
-              ng-model="show.name" ng-change= "show.edited = true"/>
+              ng-model="show.play" ng-change= "show.edited = true"/>
       <div class="actions">
         <a href ="" ng-click= "saveShows()">Save</a>
         <a href ="" class="delete" ng-click="deleteShow(show, $index)">Delete</a>

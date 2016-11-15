@@ -1,7 +1,9 @@
-'use strict'
+'use strict';
 
-/* bind index.html in public vendor to ng-app(showListApp) */
+var angular = require('/angular');
 
 angular.module('showListApp', []);
 
-/*require('./scripts/controllers/main.js'); */
+require('./scripts/services');
+require('./scripts/directives');
+require('./scripts/controllers');
