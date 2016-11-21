@@ -7,5 +7,5 @@ function ToDoDirective () {
     controller: 'showCtrl'
   }
 }
-
+/*   export  */
 module.exports = ToDoDirective;
