@@ -1,10 +1,11 @@
 'use strict';
 
+/* set up Express and point to the show Schema for Mongo  */
 var express = require('express');
 var Show = require('../models/show');
 
 var router = express.Router();
-
+/* define the Get route to the database, retreiving the shows  */
 router.get('/shows', function(req, res) {
   Show.find({}, function(err, shows) {
     if (err) {
@@ -13,7 +14,7 @@ router.get('/shows', function(req, res) {
     res.json({ shows: shows });
   });
 });
-
+/* define the post/create/add route to add shows to the database*/
 router.post('/shows', function(req, res) {
   var show = req.body;
   Show.create(show, function(err, show) {
@@ -23,7 +24,7 @@ router.post('/shows', function(req, res) {
     res.json({ 'show': show, message: 'Show Created' });
   });
 });
-
+/* define the put/update route to find and rename shows in the database*/
 router.put('/shows/:id', function(req, res) {
   var id = req.params.id;
   var show = req.body;
@@ -37,7 +38,7 @@ router.put('/shows/:id', function(req, res) {
     res.json({ 'show': show, message: 'Show Updated' });
   });
 });
-
+/* define the delete route to find and remove shows from the database*/
 router.delete('/shows/:id', function(req, res) {
   var id = req.params.id;
   Show.findByIdAndRemove(id, function(err, result) {
@@ -47,5 +48,5 @@ router.delete('/shows/:id', function(req, res) {
     res.json({ message: 'Show Deleted' });
   });
 });
-
+/* Make this express router available to other portions of the app */
 module.exports = router;

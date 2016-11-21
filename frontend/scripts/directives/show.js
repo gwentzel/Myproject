@@ -1,6 +1,5 @@
 'use strict';
-
-function ToDoDirective () {
+/* Define show directive employing show.html template   */
   return {
     templateUrl: 'templates/show.html',
     replace: true,
@@ -8,4 +7,3 @@ function ToDoDirective () {
   }
 }
 
-module.exports = ToDoDirective;

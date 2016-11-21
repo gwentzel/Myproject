@@ -1,9 +1,8 @@
 'use strict';
-
+/* use mongoose to define Mongo data schema   */
 var mongoose = require('mongoose');
 
-// show.name
-// show.completed
+/* define data types for show.name and show.completed  */
 
 var showSchema = new mongoose.Schema({
 	name: String,

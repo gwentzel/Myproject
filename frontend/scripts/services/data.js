@@ -1,11 +1,12 @@
 'use strict';
+/* Define front-end Dataservices */
 
 function DataService ($http, $q) {
-
+/* Get method  function to return shows  */
   this.getShows = function(cb) {
     $http.get('/api/shows').then(cb);
   };
-
+/* Delete method to remove a show  */
   this.deleteShow = function(show) {
     if (!show._id) {
       return $q.resolve();
@@ -14,7 +15,7 @@ function DataService ($http, $q) {
       console.log("I deleted the " + show.name + " show!");
     });
   };
-
+/* Save show method to update show when saved , otherwise original */ 
   this.saveShows = function(shows) {
     var queue = [];
     shows.forEach(function(show) {

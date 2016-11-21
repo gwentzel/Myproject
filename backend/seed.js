@@ -1,5 +1,5 @@
 'use strict';
-
+/* Create the first records in the database  */
 var Show = require('./models/show');
 
 var shows = [

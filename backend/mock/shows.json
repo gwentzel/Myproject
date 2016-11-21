@@ -1,3 +1,4 @@
+/* Test data prior to all connections being made  */
 [
 	{"name": "Mock play 1"},
 	{"name": "Mock play 2"},
