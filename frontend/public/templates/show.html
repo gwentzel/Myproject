@@ -1,4 +1,3 @@
-<!--  Make angular links to bind html elements  -->
   <div class="item" ng-class="{'editing-item': editing, 'edited': show.edited, 'completed': show.completed}" ng-repeat="show in shows | orderBy: 'completed' " ng-init="show.completed = false">
       <input type="checkbox" ng-model="show.completed" />
       <span ng-click="show.completed = !show.completed; show.edited = true"></span>
